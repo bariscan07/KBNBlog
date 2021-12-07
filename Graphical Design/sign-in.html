@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+    <!--
+        Author: Kadir Tunç
+    -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js"></script>
+        <title>KBN</title>
+    </head>
+    <body style="padding-left:10%;padding-right:10%;padding-top:10%"class="body">
+        <div class="wrapper" style="padding-top:55px">
+            <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-primary">
+                <span class="navbar-toggler-icon leftmenutrigger"></span>
+                <a class="navbar-brand" href="header.html">KBN</a>
+                <ul class="navbar-nav ml-md-auto d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i style="margin-right:2px" class="fa fa-home"></i>Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                <i style="margin-right:4px" class="fa fa-list-alt"></i>Categories
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Social</a>
+                            <a class="dropdown-item" href="#">Lifestyle</a>
+                            <a class="dropdown-item" href="#">Travel</a>
+                            <a class="dropdown-item" href="#">Health</a>
+                            <a class="dropdown-item" href="#">Sport</a>
+                            <a class="dropdown-item" href="#">Music</a>
+                            <a class="dropdown-item" href="#">Cinema</a>
+                        </div>
+                    </li>
+                </ul>
+                <input id="search-label"class="form-control ml-auto" type="search" placeholder="Search" aria-label="Search" style="width:350px;">
+                <button id="search-button" class="btn btn-outline-dark" type="submit" style="margin-left:10px;" onclick="location.href = 'search.html';"><i class="fa fa-search"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-md-auto d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-bell" style="margin-right:5px"></i>Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-bookmark" style="margin-right:5px"></i>Bookmarks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sign-in.html"><i class="fa fa-sign-in" style="margin-right:5px"></i>Sign-in</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav animate side-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-eye" style="margin-inline-end: 15px"></i>Most Viewed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-thumbs-up" style="margin-inline-end: 15px"></i>Most Liked</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-bolt" style="margin-inline-end: 15px"></i>Most Recent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-comments" style="margin-inline-end: 15px"></i>Hotly Debated</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-camera" style="margin-inline-end: 15px"></i>Video News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-pencil" style="margin-inline-end: 15px"></i>Authors</a>
+                            </li>
+                            <span class="border-top my-3"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                        <i class="fa fa-archive" style="margin-inline-end: 15px"></i>Advanced Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-edit" style="margin-inline-end: 15px"></i>Followed Authors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html"> 
+                                    <i class="fa fa-history" style="margin-inline-end: 15px"></i>View History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-briefcase" style="margin-inline-end: 15px"></i>Contributors</a>
+                            </li>
+                            <span class="border-top my-3"></span>
+                            <ul class="social-icons">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-facebook-square"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </ul>
+                </div>
+            </nav>
+
+<div style="width:100%;height:500px;border:1px solid black">
+    <div style="width:50%;height:500px;border:1px solid black;float:left">
+    <div><label style="font-weight:bold;font-size:40px">Sign-In</label></div>
+    <div style="width:80%;border:1px solid black"></div>
+    <table>
+        <tr>
+            <th><div style="float:left"><label>E-Mail:</label></div></th>
+            <th><div><input type="" name=""></div></th>
+        </tr>
+         <tr>
+            <th><div style="float:left"><label>Password:</label></div></th>
+            <th><div><input type="" name=""></div></th>
+        </tr>
+         <tr>
+            <th></th>
+            <th><label style="float:left;" class="container"><input style="float:left" type="checkbox">Remember Password</label></th>
+        </tr>
+            <tr>
+                <th></th>
+                <th><button id="sign-in" style="float:right" onclick="location.href = 'web.html';">Submit</button></th>
+            </tr>
+    </table>
+    <div><label style="font-weight:bold;font-size:30px">Forget Password?</label></div>
+   <div style="width:80%;border:1px solid black"></div>
+   <div style="height:5px"></div>
+   
+           <table><tr>
+               <th><label>E-Mail:</label></th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th></th>
+               <th><button id="recover" style="float:right" onclick="location.href = 'web.html';">Submit</button></th>
+           </tr></table>
+    </div>
+    <div style="width:50%;height:500px;border:1px solid black;float:right">
+       <div><label style="font-weight:bold;font-size:30px">Sign-Up</label></div>
+       <div style="width:80%;border:1px solid black"></div>
+       <table>
+           <tr>
+               <th>E-Mail</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>E-Mail Again:</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>Password:</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>Password Again:</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>Name:</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>Surname:</th>
+               <th><input type="" name=""></th>
+           </tr>
+           <tr>
+               <th>Birth Date</th>
+               <th><input type="date" name=""></th>
+           </tr>
+           <tr>
+            <th>Gender</th>
+            <th><select>
+                <option>Male</option>
+                <option>Female</option>
+            </select></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><input style="float:left" type="checkbox">I Accept Terms of Use</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button id="sign-up">Submit</button></th>
+        </tr>
+       </table>
+    </div>
+</div>
+
+        <div class="page-content"><!-- Page content -->
+        </div>
+   
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        
+        $( document ).ready(function() {
+            $('.leftmenutrigger').on('click', function(e) {
+                $('.side-nav').toggleClass("open");
+                $('.page-content').toggleClass("open");
+                $('.body').toggleClass("open");
+                e.preventDefault();
+            });
+        }); 
+    </script>
+    <script>
+        var btn = document.getElementById('sign-up');
+        btn.onclick = function(){
+            alert('Please check your e-mail for varification');
+        }
+        var btn2 = document.getElementById('recover');
+        btn2.onclick = function(){
+            alert('Please check your e-mail to recover your password');
+        }
+        var btn3 = document.getElementById('sign-in');
+        btn3.onclick = function(){
+            alert('Signed-in. Directing home page now...');
+        }
+    </script>
+</body>
+</html>

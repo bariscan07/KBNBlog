@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js"></script>
+        <title>KBN</title>
+    </head>
+    <body class="body">
+        <div class="wrapper" style="padding-top:55px">
+            <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-primary">
+                <span class="navbar-toggler-icon leftmenutrigger"></span>
+                <a class="navbar-brand" href="web.html">KBN</a>
+                <ul class="navbar-nav ml-md-auto d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="web.html"><i style="margin-right:2px" class="fa fa-home"></i>Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                <i style="margin-right:4px" class="fa fa-list-alt"></i>Categories
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Social</a>
+                            <a class="dropdown-item" href="#">Lifestyle</a>
+                            <a class="dropdown-item" href="#">Travel</a>
+                            <a class="dropdown-item" href="#">Health</a>
+                            <a class="dropdown-item" href="#">Sport</a>
+                            <a class="dropdown-item" href="#">Music</a>
+                            <a class="dropdown-item" href="#">Cinema</a>
+                        </div>
+                    </li>
+                </ul>
+                <input id="search-label"class="form-control ml-auto" type="search" placeholder="Search" aria-label="Search" style="width:350px;">
+                <button id="search-button" class="btn btn-outline-dark" type="submit" style="margin-left:10px;" onclick="location.href = 'search.html';"><i class="fa fa-search"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-md-auto d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-bell" style="margin-right:5px"></i>Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-bookmark" style="margin-right:5px"></i>Bookmarks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sign-in.html"><i class="fa fa-sign-in" style="margin-right:5px"></i>Sign-in</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav animate side-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-eye" style="margin-inline-end: 15px"></i>Most Viewed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-thumbs-up" style="margin-inline-end: 15px"></i>Most Liked</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-bolt" style="margin-inline-end: 15px"></i>Most Recent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-comments" style="margin-inline-end: 15px"></i>Hotly Debated</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-camera" style="margin-inline-end: 15px"></i>Video News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-pencil" style="margin-inline-end: 15px"></i>Authors</a>
+                            </li>
+                            <span class="border-top my-1"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                        <i class="fa fa-archive" style="margin-inline-end: 15px"></i>Advanced Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-edit" style="margin-inline-end: 15px"></i>Followed Authors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html"> 
+                                    <i class="fa fa-history" style="margin-inline-end: 15px"></i>View History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> 
+                                    <i class="fa fa-briefcase" style="margin-inline-end: 15px"></i>Contributors</a>
+                            </li>
+                            <span class="border-top my-1"></span>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none;" href="authorswriting.html">Create a New Post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none;" href="">Make an Announce</a>
+                            </li>
+                            <ul class="social-icons">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-facebook-square"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> 
+                                        <i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </ul>
+                </div>
+            </nav>
+            <div class="page-content"><!-- Page content -->
+                <div class="container">
+                    <div class="row mt-3"><!--Cover-->
+                        <div class="col-md-12">
+                            <div class="cover" style="background-color:#428bca;">
+                                <p style="text-align: center"><em>
+                                    "Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire eam. 
+                                    Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex tation reprehendunt. 
+                                    Mollis volumus no vix, ut qui clita habemus, ipsum senserit est et. Ut has soluta epicurei 
+                                    mediocrem, nibh nostrum his cu, sea clita electram reformidans an.Est in saepe accusam luptatum. 
+                                    Purto deleniti philosophia eum ea, impetus copiosae id mel. Vis at ignota delenit democritum, te 
+                                    summo tamquam delicata pro. Utinam concludaturque et vim, mei ullum intellegam ei."
+                                </em></p>
+                                <a href="#"><img class="author-pp" src="./img/avatar-1.jpg" alt=""></a>
+                                <p style="text-align:center;"><em>
+                                    You can follow me on
+                                </em></p>
+                                <div class="social-buttons" style="text-align:center">
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <a id="follow" href="#" class="btn btn-success" style="float:right"><i class="fa fa-plus"></i> Follow</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-8">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <h4>Posts By Author</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown text-right">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            List by
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Most Recent</a>
+                                            <a class="dropdown-item" href="#">Most Liked</a>
+                                            <a class="dropdown-item" href="#">Most Viewed</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <a class="post-img" href="#">
+                                        <img src="./img/post-1.jpg">
+                                    </a>  
+                                </div>
+                                <div class="col-md-8 " id="recent-post" >
+                                    <div class="recent-post-body">
+                                        <h5 class="recent-post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                        <ul class="recent-post-detail">
+                                            <li><a href="#">by John Doe</a></li>
+                                            <li>11 December 2018</li>
+                                        </ul>
+                                        <p class="recent-post-summary">    
+                                            Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire 
+                                            eam. Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex 
+                                            tation reprehendunt. Mollis volumus no vix.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <a class="post-img" href="#">
+                                            <img src="./img/post-2.jpg">
+                                        </a>  
+                                    </div>
+                                    <div class="col-md-8 " id="recent-post" >
+                                        <div class="recent-post-body">
+                                            <h5 class="recent-post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                            <ul class="recent-post-detail">
+                                                <li><a href="#">by John Doe</a></li>
+                                                <li>11 December 2018</li>
+                                            </ul>
+                                            <p class="recent-post-summary">    
+                                                Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire 
+                                                eam. Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex 
+                                                tation reprehendunt. Mollis volumus no vix.
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <a class="post-img" href="#">
+                                        <img src="./img/post-3.jpg">
+                                    </a>  
+                                </div>
+                                <div class="col-md-8 " id="recent-post" >
+                                    <div class="recent-post-body">
+                                        <h5 class="recent-post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                        <ul class="recent-post-detail">
+                                            <li><a href="#">by John Doe</a></li>
+                                            <li>11 December 2018</li>
+                                        </ul>
+                                        <p class="recent-post-summary">    
+                                            Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire 
+                                            eam. Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex 
+                                            tation reprehendunt. Mollis volumus no vix.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <a class="post-img" href="#">
+                                        <img src="./img/post-4.jpg">
+                                    </a>  
+                                </div>
+                                <div class="col-md-8 " id="recent-post" >
+                                    <div class="recent-post-body">
+                                        <h5 class="recent-post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                        <ul class="recent-post-detail">
+                                            <li><a href="#">by John Doe</a></li>
+                                            <li>11 December 2018</li>
+                                        </ul>
+                                        <p class="recent-post-summary">    
+                                            Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire 
+                                            eam. Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex 
+                                            tation reprehendunt. Mollis volumus no vix.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <a class="post-img" href="#">
+                                        <img src="./img/post-5.jpg">
+                                    </a>  
+                                </div>
+                                <div class="col-md-8 " id="recent-post" >
+                                    <div class="recent-post-body">
+                                        <h5 class="recent-post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
+                                        <ul class="recent-post-detail">
+                                            <li><a href="#">by John Doe</a></li>
+                                            <li>11 December 2018</li>
+                                        </ul>
+                                        <p class="recent-post-summary">    
+                                            Lorem ipsum dolor sit amet, mea ad idque detraxit, cu soleat graecis invenire 
+                                            eam. Vidisse suscipit liberavisse has ex, vocibus patrioque vim et, sed ex 
+                                            tation reprehendunt. Mollis volumus no vix.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            
+                            <h4>Categories that Author Posts</h4>
+                            <p>Lifestyle<span style="float:right">13</span></p>
+                            <p>Music<span style="float:right">7</span></p>
+                            <p>Sport<span style="float:right">4</span></p>
+                            <p>Travel<span style="float:right">2</span></p>
+                            <p>Health<span style="float:right">1</span></p>
+                            <div style="text-align:center">
+                                <img src="./img/ad-3.jpg" alt="">
+                            </div>
+                            <h4>Contact Details</h4>
+                            <div class="contact-details">
+                                <p><strong>E-mail:</strong> john.doe@somemail.com</p>
+                                <p><strong>Office Address:</strong> Some Address 1851</p>
+                                <p><strong>Phone Number:</strong> 555-123-45-67</p>
+                            </div>
+                            <h4>Author's Post Sources</h4>
+                            <div class="contact-details">
+                                <p><strong>Link:</strong> <a href="#">somesource.com</a></p>
+                                <p><strong>Link:</strong> <a href="#">somesource.com</a></p>
+                                <p><strong>Link:</strong> <a href="#">somesource.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+        
+        $( document ).ready(function() {
+            $('.leftmenutrigger').on('click', function(e) {
+                $('.side-nav').toggleClass("open");
+                $('.page-content').toggleClass("open");
+                $('.body').toggleClass("open");
+                e.preventDefault();
+            });
+        }); 
+        </script>
+        <script>
+            var btn = document.getElementById('follow');
+            follow.onclick = function(){
+                alert('Author followed!');
+            }
+        </script>
+</body>
+</html>
